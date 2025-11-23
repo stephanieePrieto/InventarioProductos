@@ -28,63 +28,68 @@ public class ProductosView extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_buscar = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btn_buscar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btn_agregar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btn_eliminar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        btn_inventario = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tbl_datos = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ventana Principal", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 3, 18))); // NOI18N
 
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 12)); // NOI18N
         jLabel1.setText("Buscar producto:");
         jPanel1.add(jLabel1);
 
-        jTextField1.setPreferredSize(new java.awt.Dimension(120, 20));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_buscar.setPreferredSize(new java.awt.Dimension(120, 20));
+        txt_buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_buscarActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1);
+        jPanel1.add(txt_buscar);
 
         jLabel2.setText("jLabel2");
         jLabel2.setPreferredSize(new java.awt.Dimension(50, 0));
         jPanel1.add(jLabel2);
 
-        jButton1.setText("Agregar");
-        jPanel1.add(jButton1);
+        btn_buscar.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 12)); // NOI18N
+        btn_buscar.setText("Buscar");
+        jPanel1.add(btn_buscar);
 
         jLabel3.setText("jLabel3");
         jLabel3.setPreferredSize(new java.awt.Dimension(50, 0));
         jPanel1.add(jLabel3);
 
-        jButton2.setText("Buscar");
-        jPanel1.add(jButton2);
+        btn_agregar.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 12)); // NOI18N
+        btn_agregar.setText("Agregar");
+        jPanel1.add(btn_agregar);
 
         jLabel4.setText("jLabel4");
         jLabel4.setPreferredSize(new java.awt.Dimension(50, 0));
         jPanel1.add(jLabel4);
 
-        jButton3.setText("Eliminar");
-        jPanel1.add(jButton3);
+        btn_eliminar.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 12)); // NOI18N
+        btn_eliminar.setText("Eliminar");
+        jPanel1.add(btn_eliminar);
 
         jLabel5.setPreferredSize(new java.awt.Dimension(50, 0));
         jPanel1.add(jLabel5);
 
-        jButton4.setText("Ver Inventario");
-        jPanel1.add(jButton4);
+        btn_inventario.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 12)); // NOI18N
+        btn_inventario.setText("Ver Inventario");
+        jPanel1.add(btn_inventario);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tbl_datos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -95,16 +100,16 @@ public class ProductosView extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tbl_datos);
 
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_buscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_buscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,10 +147,10 @@ public class ProductosView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btn_agregar;
+    private javax.swing.JButton btn_buscar;
+    private javax.swing.JButton btn_eliminar;
+    private javax.swing.JButton btn_inventario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -153,7 +158,7 @@ public class ProductosView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTable tbl_datos;
+    private javax.swing.JTextField txt_buscar;
     // End of variables declaration//GEN-END:variables
 }
