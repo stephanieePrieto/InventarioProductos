@@ -26,11 +26,140 @@ public class InventarioProductoDialog extends java.awt.Dialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        PanelSuperior = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        PanelOpciones = new javax.swing.JPanel();
+        PanelOrdenar = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        PanelBuscar = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jButton6 = new javax.swing.JButton();
+        pnl_tabla = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tbl_inventario = new javax.swing.JTable();
+        PanelInferior = new javax.swing.JPanel();
+        btn_cerrar = new javax.swing.JButton();
+
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 closeDialog(evt);
             }
         });
+
+        jPanel1.setLayout(new java.awt.BorderLayout());
+
+        PanelSuperior.setBackground(new java.awt.Color(215, 247, 247));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Inventario de Productos");
+        PanelSuperior.add(jLabel1);
+
+        jPanel1.add(PanelSuperior, java.awt.BorderLayout.NORTH);
+        PanelSuperior.getAccessibleContext().setAccessibleParent(PanelSuperior);
+
+        PanelOpciones.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        PanelOpciones.setLayout(new java.awt.GridLayout(3, 1, 5, 5));
+
+        PanelOrdenar.setToolTipText("");
+        PanelOrdenar.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabel2.setText("jLabel2");
+        PanelOrdenar.add(jLabel2);
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        PanelOrdenar.add(jButton1);
+
+        jButton2.setText("jButton1");
+        PanelOrdenar.add(jButton2);
+
+        jButton3.setText("jButton1");
+        PanelOrdenar.add(jButton3);
+
+        PanelOpciones.add(PanelOrdenar);
+
+        jPanel2.setAlignmentX(0.0F);
+        jPanel2.setAlignmentY(0.0F);
+        jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.setMaximumSize(new java.awt.Dimension(0, 0));
+        jPanel2.setMinimumSize(new java.awt.Dimension(0, 0));
+        jPanel2.setName(""); // NOI18N
+        jPanel2.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        jSeparator1.setBackground(new java.awt.Color(240, 240, 240));
+        jSeparator1.setPreferredSize(new java.awt.Dimension(200, 1));
+        jPanel2.add(jSeparator1);
+
+        PanelOpciones.add(jPanel2);
+
+        PanelBuscar.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabel3.setText("jLabel3");
+        PanelBuscar.add(jLabel3);
+
+        jTextField1.setText("jTextField1");
+        PanelBuscar.add(jTextField1);
+
+        jButton5.setText("jButton4");
+        PanelBuscar.add(jButton5);
+        PanelBuscar.add(jSeparator2);
+
+        jLabel4.setText("jLabel3");
+        PanelBuscar.add(jLabel4);
+
+        jTextField2.setText("jTextField1");
+        PanelBuscar.add(jTextField2);
+
+        jButton6.setText("jButton4");
+        PanelBuscar.add(jButton6);
+
+        PanelOpciones.add(PanelBuscar);
+
+        jPanel1.add(PanelOpciones, java.awt.BorderLayout.CENTER);
+
+        add(jPanel1, java.awt.BorderLayout.NORTH);
+
+        pnl_tabla.setLayout(new java.awt.BorderLayout());
+
+        tbl_inventario.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tbl_inventario);
+
+        pnl_tabla.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        add(pnl_tabla, java.awt.BorderLayout.CENTER);
+
+        PanelInferior.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+
+        btn_cerrar.setText("Cerrar");
+        PanelInferior.add(btn_cerrar);
+
+        add(PanelInferior, java.awt.BorderLayout.SOUTH);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -42,6 +171,10 @@ public class InventarioProductoDialog extends java.awt.Dialog {
         setVisible(false);
         dispose();
     }//GEN-LAST:event_closeDialog
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -62,5 +195,30 @@ public class InventarioProductoDialog extends java.awt.Dialog {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PanelBuscar;
+    private javax.swing.JPanel PanelInferior;
+    private javax.swing.JPanel PanelOpciones;
+    private javax.swing.JPanel PanelOrdenar;
+    private javax.swing.JPanel PanelSuperior;
+    private javax.swing.JButton btn_cerrar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPanel pnl_tabla;
+    private javax.swing.JTable tbl_inventario;
     // End of variables declaration//GEN-END:variables
 }
+//todavia falta
